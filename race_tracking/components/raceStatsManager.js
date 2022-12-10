@@ -73,7 +73,7 @@ export const AgregatePositions = (racesStats, aHorseId) => {
     const myhorse = race.node.horses.find( (horse) => horse.horseId === aHorseId )
     if( myhorse != undefined ){
       horsePositions.push( myhorse.position )
-      horseRacelength.push( race.node.length )
+      horseRacelength.push( race.node.length/100 )
     }
   })
 
